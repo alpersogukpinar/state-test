@@ -1,5 +1,5 @@
 import React from 'react';
-class Account extends React.Component {
+class Account extends React.PureComponent {
     
     shouldComponentUpdate(nextProps, nextState) {
         if(nextProps.customer.credit.creditno !== this.props.customer.credit.creditno) {

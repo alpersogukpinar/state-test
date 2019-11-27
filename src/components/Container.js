@@ -66,7 +66,7 @@ class Container extends React.Component {
         return ( 
             <div >
                 <Account accountno={this.state.customer.account.accountno} onChange = {this.handleAccountNoChange}/>
-                <Card cardno={this.state.customer.card.cardno} onChange = {this.handleCardNoChange}/>
+                <Card card={this.state.customer.card} onChange = {this.handleCardNoChange}/>
                 <Credit customer={this.state.customer} onChange = {this.handleCreditNoChange}/>
             </div>
         )
